@@ -1,0 +1,100 @@
+
+/* Global style definitions */
+:root {
+  /* Color scheme */
+  --primary-color: #1e824c; /* Hauptgrün */
+  --secondary-color: #3BB143; /* Weiß */
+  --accent-color: #043927; /* helles Grau für Hintergründe */
+  --text-color: #ffffff; /* dunkles Grau für Text */
+  --button-hover-color: #ffffff6c; /* dunkleres Grün für Button-Hover */
+}
+
+/* Font face definition */
+@font-face {
+  font-family: 'FiraSans';
+  src: url('./assets/fonts/Fira_Sans/FiraSans-Regular.ttf')Dies  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Body and typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'FiraSans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FiraSans', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Links and buttons */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Container and sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    /* Adjustments for mobile devices */
+  }
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Background and layout */
+.card {
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}

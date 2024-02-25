@@ -1,0 +1,148 @@
+/* Allgemeine Section-Stile */
+  
+  /* Spezifische Stile für jede Section */
+  .section1 {
+    margin-top: 100px;
+    outline: 2px solid #000000;
+  }
+
+  .section1-content {
+    display: flex;
+    flex-direction: flex;
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    justify-content: flex-start; /* Setzt Abstand zwischen Bild und Text */
+    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
+    max-width: 1200px; /* Maximalbreite des Containers */
+    margin: 0 auto; /* Zentriert den Container */
+    outline: 2px solid #000000;
+  }
+
+  .section1-text {
+    flex: 0 1 50%;
+    max-width: 50%; /* Oder die gewünschte Breite des Textes */
+    padding: 20px;
+    margin-right: 50px;
+    outline: 2px solid #000000;
+  }
+
+  .section1-image {
+    flex: 1;
+    max-width: 50%; /* Oder die gewünschte Breite des Bildes */
+    height: auto; /* Erhält das Seitenverhältnis */
+    outline: 2px solid #000000;
+  }
+  
+  @media (max-width: 768px) {
+    .section1-content {
+      flex-direction: column; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
+    }
+  
+    .section1-image,
+    .section1-text {
+      flex-basis: auto;
+      max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
+    }
+  }
+  
+  .section2 {
+    margin-top: 100px;
+    outline: 2px solid #000000;
+  }
+
+  .section2-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    justify-content: flex-start; /* Setzt Abstand zwischen Bild und Text */
+    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
+    max-width: 1200px; /* Maximalbreite des Containers */
+    margin: 0 auto; /* Zentriert den Container */
+    outline: 2px solid #000000;
+  }
+
+  .section2-text {
+    background-color: var(--secondary-color); /* Hintergrundfarbe */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-Schatten */
+    height: auto;
+    margin-right: 50px;
+  }
+
+  .section2-image {
+    border-radius: 10px;
+    max-width: 50%; /* Oder die gewünschte Breite des Bildes */
+    height: auto; /* Erhält das Seitenverhältnis */
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    .section2-content {
+      flex-direction: column; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
+    }
+  
+    .section2-image,
+    .section2-text {
+      flex-basis: auto;
+      max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
+      margin-bottom: 20px;
+    }
+  }
+
+  .section3 {
+    margin-top: 100px;
+    outline: 2px solid #000000;
+  }
+  
+  .section3-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
+    max-width: 1200px; /* Maximalbreite des Containers */
+    margin: 0 auto; /* Zentriert den Container */
+    outline: 2px solid #000000;
+  }
+
+  .section3-text {
+    background-color: var(--secondary-color); /* Hintergrundfarbe */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-Schatten */
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .section3-image {
+    border-radius: 10px;
+    max-width: 50%; /* Oder die gewünschte Breite des Bildes */
+    height: auto; /* Erhält das Seitenverhältnis */
+    margin: 9%;
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    .section3-content {
+      flex-direction: column; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
+    }
+  
+    .section3-image,
+    .section3-text {
+      flex-basis: auto;
+      max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
+      margin-bottom: 20px;
+    }
+  }
+  /* Stile für Buttons innerhalb der Sections */
+  .section-button {
+    background-color: var(--primary-color); /* Hauptfarbe für Buttons */
+    color: var(---text-color); /* Weißer Text */
+    padding: 10px 15px; /* Polsterung */
+    border: none; /* Keine Border */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Mauszeiger als Button anzeigen */
+    margin-top: 15px; /* Abstand nach oben */
+    transition: background-color 0.3s; /* Animation für Hover */
+  }
+  
+  

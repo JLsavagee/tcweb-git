@@ -1,0 +1,58 @@
+.foto-upload {
+  margin-top: 100px;
+  outline: 2px solid #000000;
+  }
+  
+  .foto-upload-content {
+    display: grid;
+    flex-direction: relative;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    justify-content: flex-start; /* Setzt Abstand zwischen Bild und Text */
+    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
+    max-width: 1200px; /* Maximalbreite des Containers */
+    margin: 0 auto; /* Zentriert den Container */
+    outline: 2px solid #000000;
+  }
+
+  .foto-upload-text {
+    grid-column: 1;
+    flex: 0 1 50%;
+    max-width: 50%; /* Oder die gewünschte Breite des Textes */
+    padding: 20px;
+    outline: 2px solid #000000;
+  }
+
+  .upload-inputs {
+    grid-column: 2;
+    outline: 2px solid #000000;
+  }
+
+  .foto-upload-tool {
+    display: flex;
+    flex-direction: flex;
+    align-items: center; /* Centers children vertically */
+    outline: 2px solid #000000;
+  }
+
+  .name-input-container {
+    margin-bottom: 50px;
+    outline: 2px solid #000000;
+  }
+
+  .input-field-name{
+    margin-bottom: 25px;
+  }
+  
+  /* Additional styling for specific alignment or responsiveness */
+  @media (max-width: 768px) {
+    .foto-upload-content {
+      flex-direction: column;
+    }
+    .foto-upload-text, .foto-upload-content {
+        flex-basis: auto;
+        max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
+        margin-bottom: 20px;
+      }
+    }

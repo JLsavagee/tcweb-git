@@ -1,0 +1,42 @@
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0); /* Transparent white */
+    color: var(--text-color);
+    font-family: 'FiraSans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    outline: 2px solid #000000;
+  }
+  
+  /* Styles für den Website-Namen */
+  .navbar-brand {
+    font-size: 1.5rem; /* Größere Schrift für den Markennamen */
+    color: var(--text-color); /* Verwenden der Hauptfarbe für den Markennamen */
+    text-decoration: none; /* Keine Unterstreichung für Text-Links */
+    cursor: default; /* Der Markenname ist nicht klickbar */
+    outline: 2px solid #000000;
+  }
+  
+  /* Styles für Navigationselemente */
+  .nav-link {
+    color: var(--text-color); /* Dunkelgraue Farbe für die Navigationstexte */
+    text-decoration: none; /* Keine Unterstreichung */
+    font-size: 1rem; /* Standard Schriftgröße für die Navigation */
+    display: flex;
+    outline: 2px solid #000000;
+  }
+  
+  /* Aktiver Link */
+  .nav-link.active {
+    font-weight: bold; /* Aktiver Link ist fett */
+    color: var(---text-color); /* Farbwechsel für den aktiven Link */
+  }
+  
+  .nav-link:hover {
+    background-color: var(--button-hover-color); /* Farbwechsel beim Hover */
+  }
