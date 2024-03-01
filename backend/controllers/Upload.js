@@ -1,47 +1,58 @@
+// backend/controllers/Upload.js
 const multer = require('multer');
 const path = require('path');
+const fs = require('fs').promises;
 
-// Set up multer for file storage
+// Set up storage options
 const storage = multer.diskStorage({
-  destination: function(req, file, cb) {
-    cb(null, 'uploaded_files/'); // The folder where files will be saved
-  },
-  filename: function(req, file, cb) {
-    cb(null, new Date().toISOString().replace(/:/g, '-') + '-' + file.originalname); // Format filename
-  }
+    destination: function (req, file, cb) {
+        cb(null, path.join(__dirname, '../uploaded_files'));
+        // Ensure this directory exists or is created
+    },
+    filename: function (req, file, cb) {
+        // Use a temporary filename; we'll rename it later
+        const tempFilename = 'temp_' + Date.now() + path.extname(file.originalname);
+        cb(null, tempFilename);
+    },
 });
 
-// Filter file types
-const fileFilter = (req, file, cb) => {
-  if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
-    cb(null, true);
+const upload = multer({ storage: storage });
+
+// Middleware to rename the file after upload
+// Asynchronously rename files after upload
+const renameUploadedFiles = async (req, res, next) => {
+  if (req.files) {
+    try {
+      for (let file of req.files) {
+        const newFilename = `${req.body.name}-${req.body.surname}${path.extname(file.originalname)}`;
+        const newPath = path.join(file.destination, newFilename);
+        await fs.rename(file.path, newPath);
+        // Update file properties for response
+        file.originalname = newFilename;
+        file.filename = newFilename;
+        file.path = newPath;
+      }
+      next(); // Proceed to next middleware or response handler
+    } catch (error) {
+      next(error); // Forward error to Express error handling middleware
+    }
   } else {
-    cb(null, false);
+    next(); // No files to process, proceed
   }
 };
 
-const upload = multer({
-  storage: storage,
-  limits: {
-    fileSize: 1024 * 1024 * 5 // Limit of 5MB
-  },
-  fileFilter: fileFilter
-});
+exports.renameUploadedFiles = renameUploadedFiles;
 
-// Upload function
-exports.uploadFile = (req, res, next) => {
-  console.log("Upload endpoint hit"); // To confirm the route is hit
-  const uploader = upload.single('file');
-  uploader(req, res, function(err) {
-    if (err instanceof multer.MulterError) {
-      console.error("Multer error:", err);
-      return res.status(500).json(err);
-    } else if (err) {
-      console.error("Unknown error:", err);
-      return res.status(500).json(err);
-    }
-    console.log("File uploaded successfully");
-    return res.status(200).send({ message: "Upload successful", file: req.file });
+// Export the upload function to be used as middleware
+exports.uploadFiles = (req, res, next) => {
+    const uploader = upload.array("files"); // Define the multer uploade
+    uploader(req, res, function(err) {
+        if (err instanceof multer.MulterError) {
+            return res.status(500).json({ error: err.message });
+        } else if (err) {
+           return res.status(500).json({ error: err.message });
+        }
+        next();
   });
 };
 
