@@ -1,7 +1,7 @@
 /* Footer Styles */
 .footer {
-    position: fixed;
     bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 168, 107, 0.50) 10.99%, rgba(4, 57, 39, 0.50) 92.45%); 
     background-color: rgba(255, 255, 255, 0); /* Transparent white */
     color: var(--text-color);
     font-family: 'FiraSans', sans-serif;
