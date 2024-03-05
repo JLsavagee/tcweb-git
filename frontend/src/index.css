@@ -23,7 +23,7 @@ body {
   padding: 0;
   font-family: 'FiraSans', sans-serif;
   color: var(--text-color);
-  background-image: url('./assets/images/Background_image.png'); /* Adjust the path as necessary */
+  background-image: url('./assets/images/Background_image2.png'); /* Adjust the path as necessary */
   background-size: 100% auto;
   background-position: top center;
 }

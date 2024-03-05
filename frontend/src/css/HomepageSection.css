@@ -3,7 +3,6 @@
   /* Spezifische Stile für jede Section */
   .section1 {
     margin-top: 100px;
-    outline: 2px solid #000000;
   }
 
   .section1-content {
@@ -14,7 +13,6 @@
     padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
     max-width: 1200px; /* Maximalbreite des Containers */
     margin: 0 auto; /* Zentriert den Container */
-    outline: 2px solid #000000;
   }
 
   .section1-text {
@@ -22,76 +20,77 @@
     max-width: 50%; /* Oder die gewünschte Breite des Textes */
     padding: 20px;
     margin-right: 50px;
-    outline: 2px solid #000000;
   }
 
   .section1-image {
     flex: 1;
     max-width: 50%; /* Oder die gewünschte Breite des Bildes */
     height: auto; /* Erhält das Seitenverhältnis */
-    outline: 2px solid #000000;
   }
   
   @media (max-width: 768px) {
     .section1-content {
-      flex-direction: column; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Align items centered horizontally */
+      text-align: center; /* Align text centered horizontally */
     }
   
     .section1-image,
     .section1-text {
-      flex-basis: auto;
-      max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
+      width: 100%; /* Set width to 100% to occupy full width */
+      max-width: 75%; /* Remove max-width to allow full width */
     }
   }
   
   .section2 {
     margin-top: 100px;
-    outline: 2px solid #000000;
   }
-
+  
   .section2-content {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Zentriert die Inhalte vertikal */
-    justify-content: flex-start; /* Setzt Abstand zwischen Bild und Text */
-    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
-    max-width: 1200px; /* Maximalbreite des Containers */
-    margin: 0 auto; /* Zentriert den Container */
-    outline: 2px solid #000000;
+    align-items: center; /* Centers the contents vertically */
+    justify-content: center; /* Centers the contents horizontally */
+    padding: 1vh 5vw; /* Vertical padding based on viewport height and horizontal padding based on viewport width */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Centers the container */
   }
-
+  
   .section2-text {
-    background-color: var(--secondary-color); /* Hintergrundfarbe */
-    padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-Schatten */
+    background-color: var(--secondary-color); /* Background color */
+    padding: 20px; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
     height: auto;
     margin-right: 50px;
   }
-
+  
   .section2-image {
     border-radius: 10px;
-    max-width: 50%; /* Oder die gewünschte Breite des Bildes */
-    height: auto; /* Erhält das Seitenverhältnis */
+    max-width: 50%; /* Or the desired width of the image */
+    height: auto; /* Maintains aspect ratio */
     flex: 1;
   }
-
+  
   @media (max-width: 768px) {
     .section2-content {
-      flex-direction: column; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
+      flex-direction: column; /* Stacks image and text on top of each other on smaller screens */
+      align-items: center; /* Align items centered horizontally */
+      text-align: center;
     }
   
     .section2-image,
     .section2-text {
       flex-basis: auto;
-      max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
+      max-width: 75%; /* Allows image and text to use full width on smaller screens */
       margin-bottom: 20px;
+      margin-right: 0; /* Reset margin-right for smaller screens */
     }
-  }
+  }  
 
   .section3 {
     margin-top: 100px;
-    outline: 2px solid #000000;
   }
   
   .section3-content {
@@ -101,7 +100,6 @@
     padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
     max-width: 1200px; /* Maximalbreite des Containers */
     margin: 0 auto; /* Zentriert den Container */
-    outline: 2px solid #000000;
   }
 
   .section3-text {
@@ -123,7 +121,7 @@
 
   @media (max-width: 768px) {
     .section3-content {
-      flex-direction: column; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
+      flex-direction: column-reverse; /* Stapelt Bild und Text untereinander auf kleineren Bildschirmen */
     }
   
     .section3-image,

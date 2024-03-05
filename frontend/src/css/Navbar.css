@@ -8,7 +8,7 @@
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
-  outline: 2px solid #000000;
+  margin-top: 2rem;
 }
 
 /* Styles für den Website-Namen */
@@ -17,7 +17,6 @@
   color: var(--text-color); /* Verwenden der Hauptfarbe für den Markennamen */
   text-decoration: none; /* Keine Unterstreichung für Text-Links */
   cursor: default; /* Der Markenname ist nicht klickbar */
-  outline: 2px solid #000000;
 }
 
 /* Styles für Navigationselemente */
@@ -26,7 +25,6 @@
   text-decoration: none; /* Keine Unterstreichung */
   font-size: 1rem; /* Standard Schriftgröße für die Navigation */
   display: flex;
-  outline: 2px solid #000000;
 }
 
 /* Aktiver Link */

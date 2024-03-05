@@ -9,8 +9,14 @@ const Navbar = () => {
         <NavLink to="/" className="nav-link">
           Home
         </NavLink>
+        <NavLink to="/spieler-quiz" className="nav-link">
+          Spieler-Quiz
+        </NavLink>
         <NavLink to="/foto-upload" className="nav-link">
           Foto Upload
+        </NavLink>
+        <NavLink to="/über-uns" className="nav-link">
+          Über Uns
         </NavLink>
     </nav>
   );

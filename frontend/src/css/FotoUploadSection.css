@@ -1,6 +1,6 @@
 .foto-upload {
   margin-top: 100px;
-  outline: 2px solid #000000;
+  margin-bottom: 1060px;
   }
   
   .foto-upload-content {
@@ -13,7 +13,6 @@
     padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
     max-width: 1200px; /* Maximalbreite des Containers */
     margin: 0 auto; /* Zentriert den Container */
-    outline: 2px solid #000000;
   }
 
   .foto-upload-text {
@@ -21,24 +20,20 @@
     flex: 0 1 50%;
     max-width: 50%; /* Oder die gewünschte Breite des Textes */
     padding: 20px;
-    outline: 2px solid #000000;
   }
 
   .upload-inputs {
     grid-column: 2;
-    outline: 2px solid #000000;
   }
 
   .foto-upload-tool {
     display: flex;
     flex-direction: flex;
     align-items: center; /* Centers children vertically */
-    outline: 2px solid #000000;
   }
 
   .name-input-container {
     margin-bottom: 50px;
-    outline: 2px solid #000000;
   }
 
   .input-field-name{
