@@ -23,11 +23,34 @@ function SpielerQuiz() {
     setSelectedAnswers(newAnswers);
   };
 
+  const handleSubmit = async () => {
+
+    try {
+      const response = await fetch('http://localhost:5001/api/submit-answer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ answer: selectedAnswers }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Submission successful:', data);
+    } catch (error) {
+      console.error('Submission error:', error);
+    }
+  };
+
   const nextQuestion = () => {
     if (index < questions.length - 1) {
       setIndex(index + 1);
     } else {
-      setShowResults(true); // Show results after the last question
+        handleSubmit();
+        setShowResults(true); // Show results after the last question
     }
   };
 

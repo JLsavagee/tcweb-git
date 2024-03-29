@@ -1,10 +1,9 @@
-//backend/routes/find_player.js
+// backend/routes/find_player.js
 
 const express = require('express');
 const router = express.Router();
-const playerController = require('../controllers/PlayerController');
+const { submitAnswer } = require('../controllers/PlayerController');
 
-// Define the route for finding the closest player
-router.post('/find_player', playerController.findClosestPlayer);
+router.post('/submit-answer', submitAnswer);
 
 module.exports = router;
