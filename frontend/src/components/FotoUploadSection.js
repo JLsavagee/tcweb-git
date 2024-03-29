@@ -2,11 +2,13 @@
 
 import React, { useState } from 'react';
 import '../css/FotoUploadSection.css'
+import axios from 'axios' 
 
 const FotoUploadSection = () => {
     const [fileName, setFileName] = useState('');
     const [fileSurname, setFileSurname] = useState('');
     const [files, setFiles] = useState(null);
+    const [previewUrl, setPreviewUrl] = useState('');
 
     const handleFileChange = (event) => {
         setFiles(event.target.files);
@@ -19,7 +21,7 @@ const FotoUploadSection = () => {
     const handleSurnameChange = (event) => {
       setFileSurname(event.target.value);
   }; 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault(); // Prevents the default form submission
 
         const formData = new FormData();
@@ -33,14 +35,25 @@ const FotoUploadSection = () => {
         }
 
         // Adjust the fetch URL to your backend endpoint
-        fetch('http://localhost:5001/upload', {
-            method: 'POST',
-            body: formData, // Payload is formData object
-        })
-        .then(res => res.json())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error:', error));
-    };
+        try {
+          const response = await axios.post('http://localhost:5001/upload', formData, {
+              headers: {
+                  'Content-Type': 'multipart/form-data',
+              },
+          });
+          // Assuming the backend responds with the path to the uploaded file(s)
+          // Here you might need to adjust depending on how your backend responds
+          // For example, if it returns the filename of the first uploaded file:
+          if (response.data && response.data.files && response.data.files.length > 0) {
+            const uploadedFilename = response.data.files[0].newFilename;
+            setPreviewUrl(`http://localhost:5001/processed_files/${uploadedFilename}`);
+            console.loc(uploadedFilename)
+        }
+        
+    } catch (error) {
+        console.error('Error:', error);
+      }
+  };
 
     return (
         <form className="foto-upload" onSubmit={handleSubmit}>
@@ -62,6 +75,7 @@ const FotoUploadSection = () => {
               <div className="foto-upload-tool"></div>
                 <input type="file" name="file" id="files" multiple onChange={handleFileChange} />
                 <button type="submit">Upload</button>
+                {previewUrl && <img src={previewUrl} alt="Preview" className="upload-preview" />}
               </div>
             </div>
         </form>
