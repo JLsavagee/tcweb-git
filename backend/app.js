@@ -9,6 +9,9 @@ const path = require('path');
 
 const app = express();
 
+const checkImageRoute = require('./routes/file_processing'); // Adjust the path as necessary
+app.use(checkImageRoute);
+
 app.use(cors()); // Apply CORS middleware to enable cross-origin requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -16,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 // Use the upload routes
 app.use('/', uploadRoutes);
 app.use('/api', findPlayer);
-app.use('/processed_files', express.static(path.join(__dirname, 'processed_files')));
+app.use('/processed_files', express.static('processed_files'));
 
 const PORT = process.env.PORT || 5001;
 
