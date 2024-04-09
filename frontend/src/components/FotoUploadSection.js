@@ -44,26 +44,57 @@ const FotoUploadSection = () => {
 
     return (
         <form className="foto-upload" onSubmit={handleSubmit}>
-           <div className="foto-upload-content">
-            <div className="foto-upload-text">
-              <h1>Foto Upload</h1>
+          <div className="foto-upload-sidebar">
+  
+          </div>
+          
+          <div className='name-box'>
+            <div className='name-instruction'>
+              <h1>Schritt 1</h1>
+              <a1>Bitte geben Sie den Vor- und Nachnamen des Spielers ein</a1>
             </div>
-            <div className='upload-inputs'>
-              <div className="name-input-container">
-                <div className="input-field-name">
-                  <label htmlFor="first-name">Name:</label>
-                  <input type="text" name="file-name" id="name" value={fileName} onChange={handleNameChange} />
-                </div>
-                <div className="input-field-surname">
-                  <label htmlFor="surname">Surname:</label>
-                  <input type="text" name="file-surname" id="surname" value={fileSurname} onChange={handleSurnameChange} />
-                </div>
-              </div>
-              <div className="foto-upload-tool"></div>
-                <input type="file" name="file" id="files" multiple onChange={handleFileChange} />
-                <button type="submit">Upload</button>
-              </div>
+
+            <div className="input-field-name">
+              <label htmlFor="first-name">Name</label>
+              <input type="text" name="file-name" id="name" value={fileName} onChange={handleNameChange} />
             </div>
+            <div className="input-field-surname">
+              <label htmlFor="surname">Nachname</label>
+              <input type="text" name="file-surname" id="surname" value={fileSurname} onChange={handleSurnameChange} />
+            </div>
+          </div>
+
+          <div className='upload-box'>
+            <div className='upload-instruction'>
+              <h1>Schritt 3</h1>
+              <a1> Bitte laden Sie das Foto hoch, das auf der Karte abgebildet werden soll</a1>
+            </div>
+            <div className="upload-feature">
+              <input type="file" name="file" id="files" multiple onChange={handleFileChange} />
+              <button type="submit">Upload</button>
+            </div>
+          </div>
+
+          <div className='nummer-box'>
+            <div className='nummer-instruction'>
+              <h1>Schritt 3</h1>
+              <a1>Wählen Sie nun die Postition und die Trikotnummer, die auf der Karte abgebildet werden soll</a1>
+            </div>
+
+            <div className="input-field-nummer">
+              <label htmlFor="surname">Trikotnummer</label>
+              <input type="text"/>
+            </div>
+
+           <div className="position-dropdown">
+              <button class="dropbtn">Position</button>
+              <div class="dropdown-content">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+             </div>
+            </div>
+          </div>
         </form>
     );
 };

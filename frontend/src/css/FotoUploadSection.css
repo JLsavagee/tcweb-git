@@ -1,53 +1,143 @@
 .foto-upload {
   margin-top: 100px;
-  margin-bottom: 1060px;
-  }
-  
-  .foto-upload-content {
-    display: grid;
-    flex-direction: relative;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    align-items: center; /* Zentriert die Inhalte vertikal */
-    justify-content: flex-start; /* Setzt Abstand zwischen Bild und Text */
-    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
-    max-width: 1200px; /* Maximalbreite des Containers */
-    margin: 0 auto; /* Zentriert den Container */
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: repeat(13, 100px);
+  grid-template-columns: repeat(13, 1fr)
   }
 
-  .foto-upload-text {
-    grid-column: 1;
-    flex: 0 1 50%;
-    max-width: 50%; /* Oder die gewünschte Breite des Textes */
-    padding: 20px;
-  }
-
-  .upload-inputs {
-    grid-column: 2;
-  }
-
-  .foto-upload-tool {
+  .foto-upload-sidebar {
+    grid-row: 1 / 15;
+    grid-column: 2 ;
+    background-color: white;
     display: flex;
-    flex-direction: flex;
-    align-items: center; /* Centers children vertically */
-  }
-
-  .name-input-container {
-    margin-bottom: 50px;
-  }
-
-  .input-field-name{
-    margin-bottom: 25px;
+    width: 40px;
+    border-radius: 20px;
   }
   
-  /* Additional styling for specific alignment or responsiveness */
-  @media (max-width: 768px) {
-    .foto-upload-content {
-      flex-direction: column;
-    }
-    .foto-upload-text, .foto-upload-content {
-        flex-basis: auto;
-        max-width: 100%; /* Erlaubt Bild und Text, die volle Breite auf kleineren Bildschirmen zu nutzen */
-        margin-bottom: 20px;
-      }
-    }
+
+  .name-box {
+    grid-row: 1 / 4;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .name-instruction {
+    grid-row: 1 / 4;
+    grid-column: 1 / 4;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 50px;
+    background-color: #E95918;
+  }
+
+  .input-field-name {
+    grid-row: 1 / 2;
+    grid-column: 4 / 10;
+    border-top-right-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 25px;
+  }
+
+  .input-field-surname {
+    grid-row: 2 / 3;
+    grid-column: 4 / 10;    
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 25px;
+  }
+
+  .upload-box {
+    grid-row: 6 / 9;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+.upload-instruction {
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 50px;
+  background-color: #E95918;
+}
+
+  .upload-feature {
+    grid-row: 1 / 4;
+    grid-column: 4 / 10;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    color: var(--label-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px
+  }
+
+  .nummer-box {
+    grid-row: 11/ 14;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .nummer-instruction {
+    grid-row: 1 / 2;
+    grid-column: 1 / 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 25px;
+    background-color: #E95918;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-field-nummer {
+    grid-row: 2 / 4;
+    grid-column: 1 / 5;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 25px;
+  }
+
+  .position-dropdown {
+    grid-row: 2 / 4;
+    grid-column: 5/ 9;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    color: var(--label-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: green;
+  }
+  
+  /* Show the dropdown content when the dropdown is hovered over */
+  .position-dropdown:hover .dropdown-content {
+    display: block;
+  }

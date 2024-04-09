@@ -7,6 +7,8 @@
   --background-color: #043927; /* helles Grau für Hintergründe */
   --text-color: #ffffff; /* dunkles Grau für Text */
   --button-hover-color: #ffffff6c; /* dunkleres Grün für Button-Hover */
+  --label-color: #E95918;
+
 }
 
 /* Font face definition */
@@ -46,6 +48,10 @@ p {
 a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+label {
+color: var(--label-color)
 }
 
 button {

@@ -15,9 +15,9 @@ const Navbar = () => {
         <NavLink to="/" exact className="nav-link">
           Home
         </NavLink>
-        <NavLink to="/spieler-quiz" className="nav-link">
+        {/* <NavLink to="/spieler-quiz" className="nav-link">
           Spieler-Quiz
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/foto-upload" className="nav-link">
           Foto Upload
         </NavLink>
