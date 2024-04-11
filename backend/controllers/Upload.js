@@ -24,7 +24,7 @@ const renameUploadedFiles = async (req, res, next) => {
   if (req.files) {
     try {
       for (let file of req.files) {
-        const newFilename = `${req.body.name}-${req.body.surname}${path.extname(file.originalname)}`;
+        const newFilename = `${req.body.name}-${req.body.surname}-${req.body.position}-${req.body.trikotnummer}${path.extname(file.originalname)}`;
         const newPath = path.join(file.destination, newFilename);
         await fs.rename(file.path, newPath);
         // Update file properties for response
