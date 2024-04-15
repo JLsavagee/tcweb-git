@@ -1,6 +1,7 @@
 // FotoUploadSection.js in frontend/src/components
 
 import React, { useState } from 'react';
+import beispielImage from "../assets/images/Teamcards.de Jojo 1.jpg";
 import '../css/FotoUploadSection.css'
 
 const FotoUploadSection = () => {
@@ -12,6 +13,7 @@ const FotoUploadSection = () => {
 
     const handleFileChange = (event) => {
         setFiles(event.target.files);
+        setFiles(URL.createObjectURL(event.target.files[0]))
     };
 
     const handleNameChange = (event) => {
@@ -79,11 +81,14 @@ const FotoUploadSection = () => {
 
           <div className='upload-box'>
             <div className='upload-instruction'>
-              <h1>Schritt 3</h1>
+              <h1>Schritt 2</h1>
               <p> Bitte laden Sie das Foto hoch, das auf der Karte abgebildet werden soll</p>
             </div>
             <div className="upload-feature">
               <input type="file" name="file" id="files" multiple onChange={handleFileChange} />
+            </div>
+            <div className='bild-preview'>
+              <img src={files} alt='preview'/>
             </div>
           </div>
 
@@ -116,7 +121,7 @@ const FotoUploadSection = () => {
             </div>
 
             <div className='beispiel-bild'>
-              <a>Image</a>
+              <img src={beispielImage} alt="Beispiel-Bild" />
               <button type="submit">Absenden</button>
             </div>
 
