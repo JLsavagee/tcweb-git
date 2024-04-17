@@ -1,6 +1,11 @@
 // FotoUploadSection.js in frontend/src/components
 
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
 import beispielImage from "../assets/images/Teamcards.de Jojo 1.jpg";
 import '../css/FotoUploadSection.css'
 
@@ -59,7 +64,21 @@ const FotoUploadSection = () => {
 
     return (
         <form className="foto-upload" onSubmit={handleSubmit}>
-          <div className="foto-upload-sidebar">
+          <div className="foto-upload-sidebar-box">
+            <div className='sidebar'>
+            </div>
+            <div className='circle-1'>
+              <FontAwesomeIcon icon={faUser} className="icon" />
+            </div>
+            <div className='circle-2'>
+            <FontAwesomeIcon icon={faFileArrowUp} className='icon' />
+            </div>
+            <div className='circle-3'>
+              <FontAwesomeIcon icon={faFutbol} className="icon" />
+            </div>
+            <div className='circle-4'>
+              <FontAwesomeIcon icon={faClipboardCheck} className="icon" />
+            </div>
   
           </div>
           

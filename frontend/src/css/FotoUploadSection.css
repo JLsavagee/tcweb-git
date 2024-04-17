@@ -6,15 +6,83 @@
   grid-template-columns: repeat(13, 1fr)
   }
 
-  .foto-upload-sidebar {
+  .foto-upload-sidebar-box {
     grid-row: 1 / 19;
     grid-column: 2 ;
-    background-color: white;
-    display: flex;
-    width: 40px;
-    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(19, 100px);
+    grid-template-columns: repeat(3, 1fr);
   }
   
+  .sidebar {
+    grid-row: 1 / 19;
+    grid-column: 2/3;
+    justify-self: center; 
+    background-color: white;
+    border-radius: 40px;
+    width: 33px;
+  }
+  .circle-1 {
+    grid-row: 2 / 3;
+    grid-column:  1 / 4; 
+    justify-self: center; 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-2 {
+    grid-row: 7 / 8;
+    grid-column:  1 / 4; 
+    justify-self: center; 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-3 {
+    grid-row: 12 / 13;
+    grid-column:  1 / 4; 
+    justify-self: center; 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-4 {
+    grid-row: 17 / 18;
+    grid-column:  1 / 4; 
+    justify-self: center; /* Center the circle-1 itself within the grid column */
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    color: #E95918;
+    width: 50px;
+    height: 50px;
+  }
 
   .name-box {
     grid-row: 1 / 4;
