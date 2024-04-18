@@ -87,14 +87,15 @@ const FotoUploadSection = () => {
               <h1>Schritt 1</h1>
               <p>Bitte geben Sie den Vor- und Nachnamen des Spielers ein</p>
             </div>
-
-            <div className="input-field-name">
-              <label htmlFor="first-name">Name</label>
-              <input type="text" name="file-name" id="name" value={fileName} onChange={handleNameChange} />
-            </div>
-            <div className="input-field-surname">
-              <label htmlFor="surname">Nachname</label>
-              <input type="text" name="file-surname" id="surname" value={fileSurname} onChange={handleSurnameChange} />
+            <div className="input-field-names">
+              <div className='name-container'>
+                <label htmlFor="first-name">Name</label>
+                <input type="text" name="file-name" id="name" value={fileName} onChange={handleNameChange} />
+              </div>
+              <div className='surname-container'>
+                <label htmlFor="surname">Nachname</label>
+                <input type="text" name="file-surname" id="surname" value={fileSurname} onChange={handleSurnameChange} />
+              </div>
             </div>
           </div>
 
