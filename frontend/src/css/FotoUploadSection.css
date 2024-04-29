@@ -84,7 +84,7 @@
     height: 50px;
   }
 
-  input {
+  input[type="text"] {
     outline: none;
     width: 2fr;
     height: 30px;
@@ -98,7 +98,7 @@
     z-index: 1111;
   }
 
-  input:focus {
+  input[type="text"]:focus {
     border: 2px solid #E95918
   }
 
@@ -145,6 +145,11 @@
     flex-direction: column;
     gap: 10px
   }
+
+
+input[type="file"] {
+  display: none;
+}
 
   .upload-box {
     grid-row: 6 / 9;

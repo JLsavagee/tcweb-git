@@ -104,9 +104,10 @@ const FotoUploadSection = () => {
               <h1>Schritt 2</h1>
               <p> Bitte laden Sie das Foto hoch, das auf der Karte abgebildet werden soll</p>
             </div>
-            <div className="upload-feature">
+            <label className="upload-feature">
               <input type="file" name="file" id="files" multiple onChange={handleFileChange} />
-            </div>
+              Datei Auswählen
+            </label>
             <div className='bild-preview'>
               <img src={files} alt='preview'/>
             </div>
