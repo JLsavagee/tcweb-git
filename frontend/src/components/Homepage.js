@@ -41,19 +41,19 @@ function Homepage() {
         </div>
         <div className='box-1'>
           <FontAwesomeIcon icon={faIdCard} className='icon'/>
-          <h3>Name, Foto, Position</h3>
-          <h4>Den Rest machen Wir!</h4>
+          <h1>Name, Foto, Position</h1>
+          <h2>Den Rest machen Wir!</h2>
           <p>Über unsere Upload Funktion kannst du ganz einfach die Daten des Spielers angeben.</p>
         </div>
         <div className='box-2'>
           <FontAwesomeIcon icon={faStar} className='icon'/>
-          <a>Headline</a>
-          <p>Text</p>
+          <h1>Drucken, Fertig, Los!</h1>
+          <p>Die kleinen Stars werden im hochwertigen Sammelkarten Format aussehen wie ihre Idole! </p>
         </div>
         <div className='box-3'>
           <FontAwesomeIcon icon={faFaceLaughBeam} className='icon'/>
-          <a>Headline</a>
-          <p>Text</p>
+          <h1>Fußball, Freude, kleine Stars!</h1>
+          <p>Seien Sie der Vorreiter mit individuellen Fußballkarten als Teil Ihres Sponsoren-Pakets.</p>
         </div>
       </div>
 
