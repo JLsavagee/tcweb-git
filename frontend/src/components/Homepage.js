@@ -2,9 +2,6 @@ import React from 'react';
 import '../css/Homepage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './Navbar.js';
-import Image1 from '../assets/images/blank_pauli.png';
-import Image2 from '../assets/images/Ju_pokal.pdf';
-import Image3 from '../assets/images/blank_bremen.png';
 import Image4 from '../assets/images/Teamcards.de Jojo 1.jpg';
 import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
