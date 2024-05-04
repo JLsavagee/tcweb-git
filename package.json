@@ -4,8 +4,7 @@
   "description": "Teamcards Website",
   "main": "app.js",
   "scripts": {
-    "start": "concurrently \"nodemon backend/app.js\" \"cd frontend && npm start\"",
-    "build": "cd frontend && npm run build"
+    "start": "concurrently \"nodemon backend/app.js\" \"cd frontend && npm start build\"",
   },
   "author": "DonJL",
   "license": "ISC",
