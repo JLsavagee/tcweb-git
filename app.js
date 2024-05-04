@@ -1,13 +1,17 @@
 const express = require('express');
-const app = express();
 const path = require('path');
+const app = express();
 
-app.use(express.static(path.join(__dirname, './frontend')));
+// Serve static files from the 'frontend/build' directory
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
+// Serve the React app for any other routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+  res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
 });
 
-app.listen(3000, () => {
-  console.log('Server läuft auf Port 3000');
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
