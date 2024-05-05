@@ -6,25 +6,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
-  margin-top: 2rem;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 25px;
 }
 
 /* Styles für den Website-Namen */
 .navbar-brand {
-  font-size: 1.5rem; /* Größere Schrift für den Markennamen */
+  font-size: 2.5rem; /* Größere Schrift für den Markennamen */
   color: var(--text-color); /* Verwenden der Hauptfarbe für den Markennamen */
   text-decoration: none; /* Keine Unterstreichung für Text-Links */
   cursor: default; /* Der Markenname ist nicht klickbar */
 }
 
-/* Styles für Navigationselemente */
-.nav-link {
-  color: var(--text-color); /* Dunkelgraue Farbe für die Navigationstexte */
-  text-decoration: none; /* Keine Unterstreichung */
-  font-size: 1rem; /* Standard Schriftgröße für die Navigation */
+nav .nav-link {
   display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  padding: 5px;
+
 }
 
 /* Aktiver Link */
@@ -35,6 +35,7 @@
 
 .nav-link:hover {
   background-color: var(--button-hover-color); /* Farbwechsel beim Hover */
+  border-radius: 5px;
 }
 
 

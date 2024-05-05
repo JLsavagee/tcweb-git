@@ -7,7 +7,7 @@ const Navbar = () => {
     <footer className="footer">
       {/* Brand name */}
       <div className="navbar-brand">
-        TeamCards
+        Team-cards.de
       </div>
 
       {/* First group of nav links */}

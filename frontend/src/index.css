@@ -53,12 +53,6 @@ p {
   line-height: 1.5;
 }
 
-/* Links and buttons */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
 label {
 color: var(--label-color)
 }
@@ -76,15 +70,3 @@ button {
 button:hover {
   background-color: var(--button-hover-color);
 }
-
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .navbar {
-    /* Adjustments for mobile devices */
-  }
-  .container {
-    padding: 0 10px;
-  }
-}
-
