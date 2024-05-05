@@ -1,0 +1,278 @@
+.foto-upload {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: repeat(19, 100px);
+  grid-template-columns: repeat(13, 1fr)
+  }
+
+  .foto-upload-sidebar-box {
+    grid-row: 1 / 19;
+    grid-column: 2 ;
+    display: grid;
+    grid-template-rows: repeat(19, 100px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .sidebar {
+    grid-row: 1 / 19;
+    grid-column: 2/3;
+    justify-self: center; 
+    background-color: white;
+    border-radius: 40px;
+    width: 33px;
+  }
+  .circle-1 {
+    grid-row: 2 / 3;
+    grid-column:  1 / 4; 
+    justify-self: center; 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-2 {
+    grid-row: 7 / 8;
+    grid-column:  1 / 4; 
+    justify-self: center; 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-3 {
+    grid-row: 12 / 13;
+    grid-column:  1 / 4; 
+    justify-self: center; 
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-4 {
+    grid-row: 17 / 18;
+    grid-column:  1 / 4; 
+    justify-self: center; /* Center the circle-1 itself within the grid column */
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    color: #E95918;
+    width: 50px;
+    height: 50px;
+  }
+
+  input[type="text"] {
+    outline: none;
+    width: 2fr;
+    height: 30px;
+    border-radius: 10px;
+    font-size: medium;
+    line-height: normal;
+    padding-left: 10px;
+    border: 2px solid rgba(233, 89, 24, 0.25);
+    background: rgba(233, 89, 24, 0.25);
+    transition: 0.1s ease;
+    z-index: 1111;
+  }
+
+  input[type="text"]:focus {
+    border: 2px solid #E95918
+  }
+
+  .name-box {
+    grid-row: 1 / 4;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 100px 100px;
+  }
+
+  .name-instruction {
+    grid-row: 1 / 4;
+    grid-column: 1 / 4;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 50px;
+    background-color: #E95918;
+  }
+
+  .input-field-names {
+    grid-row: 1 / 4;
+    grid-column: 4 / 10;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 60px);
+  }
+
+  .name-container{
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+
+  .surname-container{
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+
+
+input[type="file"] {
+  display: none;
+}
+
+  .upload-box {
+    grid-row: 6 / 9;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+.upload-instruction {
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 50px;
+  background-color: #E95918;
+}
+
+  .upload-feature {
+    grid-row: 1 / 4;
+    grid-column: 4 / 10;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    color: var(--label-color);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 25px
+  }
+
+  .bild-preview {
+    grid-row: 1 / 2;
+    grid-column: 7 / 10;
+    display: flex;
+    height: 200px;
+  }
+
+  .nummer-box {
+    grid-row: 11/ 14;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .nummer-instruction {
+    grid-row: 1 / 2;
+    grid-column: 1 / 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    background-color: #E95918;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-field-nummer {
+    grid-row: 2 / 4;
+    grid-column: 1 / 5;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 25px;
+  }
+
+  .position-dropdown {
+    grid-row: 2 / 4;
+    grid-column: 5/ 10;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 25px;
+  }
+
+  .check-box {
+    grid-row: 16/ 19;
+    grid-column: 4 / 13;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .check-instruction {
+    grid-row: 1 / 2;
+    grid-column: 1 / 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    background-color: #E95918;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beispiel-bild {
+    grid-row: 2 / 4;
+    grid-column: 6 / 10;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+.eingaben {
+  grid-row: 2 / 4;
+  grid-column: 1 / 6;
+  border-bottom-left-radius: 20px;
+  background-color: white;
+  color: var(--label-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  gap:25px;
+  list-style: none;
+}

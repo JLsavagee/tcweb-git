@@ -1,0 +1,48 @@
+/* Footer Styles */
+.footer {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Define three columns */
+  align-items: start;
+  background: linear-gradient(0deg, rgba(0, 168, 107, 0.50) 10.99%, rgba(4, 57, 39, 0) 92.45%);
+  color: var(--text-color);
+  font-family: 'FiraSans', sans-serif;
+}
+
+/* Brand name styles */
+.navbar-brand {
+  grid-column: 1;
+}
+
+/* First group of nav links styles */
+.nav-links {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Second group of nav links styles */
+.nav-links-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3;
+}
+
+/* Navigation link styles */
+.nav-link, .nav-link-2 {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-bottom: 15px; /* Space between links */
+}
+
+/* Active link styles */
+.nav-link.active, .nav-link-2.active {
+  font-weight: bold;
+  color: var(--text-color); /* Corrected variable */
+}
+
+.nav-link:hover, .nav-link-2:hover{
+  background-color: var(--button-hover-color);
+  border-radius: 5px;
+}
