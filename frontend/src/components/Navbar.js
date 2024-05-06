@@ -12,6 +12,9 @@ const Navbar = () => {
         {/* <NavLink to="/spieler-quiz" className="nav-link">
           Spieler-Quiz
         </NavLink> */}
+        <NavLink to="/organisatoren" className="nav-link">
+          Für Organisatoren
+        </NavLink>
         <NavLink to="/foto-upload" className="nav-link">
           Foto Upload
         </NavLink>

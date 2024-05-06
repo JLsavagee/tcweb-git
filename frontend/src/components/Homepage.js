@@ -7,9 +7,16 @@ import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faFaceLaughBeam } from '@fortawesome/free-solid-svg-icons';
 import Footer from './Footer.js';
+import { useNavigate } from 'react-router-dom';
 
 
 function Homepage() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/organisatoren');
+  };
+
   return (
     <div>
       <Navbar />
@@ -47,7 +54,7 @@ function Homepage() {
           <h1>Drucken, Fertig, Los!</h1>
           <p>Die kleinen Stars werden im hochwertigen Sammelkarten Format aussehen wie ihre Idole! </p>
           <p>Möchtest du individuelle Karten auf deinem Event austeilen?</p>
-          <button>Für Organisatoren</button>
+          <button onClick={handleClick}>Für Organisatoren</button>
         </div>
         <div className='box-3'>
           <FontAwesomeIcon icon={faFaceLaughBeam} className='icon'/>
