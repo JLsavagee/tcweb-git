@@ -14,7 +14,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .sidebar {
+  .foto-upload-sidebar {
     grid-row: 1 / 19;
     grid-column: 2/3;
     justify-self: center; 
@@ -22,7 +22,7 @@
     border-radius: 40px;
     width: 33px;
   }
-  .circle-1 {
+  .fcircle-1 {
     grid-row: 2 / 3;
     grid-column:  1 / 4; 
     justify-self: center; 
@@ -36,7 +36,7 @@
     align-items: center;
   }
 
-  .circle-2 {
+  .fcircle-2 {
     grid-row: 7 / 8;
     grid-column:  1 / 4; 
     justify-self: center; 
@@ -50,7 +50,7 @@
     align-items: center;
   }
 
-  .circle-3 {
+  .fcircle-3 {
     grid-row: 12 / 13;
     grid-column:  1 / 4; 
     justify-self: center; 
@@ -64,10 +64,10 @@
     align-items: center;
   }
 
-  .circle-4 {
+  .fcircle-4 {
     grid-row: 17 / 18;
     grid-column:  1 / 4; 
-    justify-self: center; /* Center the circle-1 itself within the grid column */
+    justify-self: center; /* Center the fcircle-1 itself within the grid column */
     align-self: center;
     width: 100px;
     height: 100px;

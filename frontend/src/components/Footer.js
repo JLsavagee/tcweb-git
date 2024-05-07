@@ -21,6 +21,12 @@ const Navbar = () => {
         <NavLink to="/foto-upload" className="nav-link">
           Foto Upload
         </NavLink>
+        <NavLink to="/organisatoren" className="nav-link">
+          Für Organisatoren
+        </NavLink>
+        <NavLink to="/sponsoren" className="nav-link">
+          Für Sponsoren
+        </NavLink>
         <NavLink to="/über-uns" className="nav-link">
           Über Uns
         </NavLink>

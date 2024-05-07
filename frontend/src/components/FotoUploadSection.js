@@ -65,18 +65,18 @@ const FotoUploadSection = () => {
     return (
         <form className="foto-upload" onSubmit={handleSubmit}>
           <div className="foto-upload-sidebar-box">
-            <div className='sidebar'>
+            <div className='foto-upload-sidebar'>
             </div>
-            <div className='circle-1'>
+            <div className='fcircle-1'>
               <FontAwesomeIcon icon={faUser} className="icon" />
             </div>
-            <div className='circle-2'>
+            <div className='fcircle-2'>
             <FontAwesomeIcon icon={faFileArrowUp} className='icon' />
             </div>
-            <div className='circle-3'>
+            <div className='fcircle-3'>
               <FontAwesomeIcon icon={faFutbol} className="icon" />
             </div>
-            <div className='circle-4'>
+            <div className='fcircle-4'>
               <FontAwesomeIcon icon={faClipboardCheck} className="icon" />
             </div>
   

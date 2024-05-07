@@ -16,6 +16,9 @@ function Homepage() {
   const handleClick = () => {
     navigate('/organisatoren');
   };
+  const handleClick2 = () => {
+    navigate('/sponsoren');
+  };
 
   return (
     <div>
@@ -61,7 +64,7 @@ function Homepage() {
           <h1>Fußball, Freude, kleine Stars!</h1>
           <p>Seien Sie der Vorreiter mit individuellen Fußballkarten als Teil Ihres Sponsoren-Pakets.</p>
           <p>Sind Sie interessiert daran Sammelkarten als Sponsorenleistung anzubieten?</p>
-          <button>Für Sponsoren</button>
+          <button onClick={handleClick2}>Für Sponsoren</button>
         </div>
       </div>
 
