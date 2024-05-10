@@ -78,6 +78,7 @@ button:hover {
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  border: 1px solid red;
 }
 
 @media (max-width: 640px) {

@@ -11,10 +11,9 @@
 } 
 
 .pitch-section {
-    margin: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: auto;
     gap: 50px;
 }
 
@@ -32,7 +31,6 @@
     align-items: center;
     justify-self: center;
     justify-content: center;
-    width: 1000px;
 }
 
 .obox-1 {
@@ -55,12 +53,23 @@
     grid-row: 3;
 }
 
+.prozess-headline {
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
 .prozess-section {
-    margin: 100px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 20px;
+}
+
+.prozess-section p {
+    font-size: 2rem;
+}
+
+.prozess-section p {
+    font-size: 1.5rem;
 }
 
 .sidebar {
@@ -129,4 +138,69 @@
 .step4 {
     grid-column: 2;
     grid-row: 4;
+}
+
+.o-icon {
+    color: #FF5C00;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .pitch-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pitch-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .pitch-section h2 {
+        font-size: 2rem;
+    }
+    
+    .pitch-section p {
+     font-size: 1.125rem;
+    } 
+
+    .prozess-headline {
+        padding-left: 1rem;
+    }
+    .prozess-headline h1{
+        font-size: 1.5rem;
+    }
+    .sidebar {
+        grid-column: 1;
+        grid-row: 1 / 5;
+        justify-self: center; 
+        background-color: white;
+        border-radius: 40px;
+        width: 16.5px;
+    }
+    
+    .circle-1, .circle-2, .circle-3, .circle-4 {
+        justify-self: center; 
+        align-self: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    } 
+    .prozess-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .prozess-section p {
+        font-size: 1.125rem;
+    }
+
+    .o-icon {
+        height: 25px;
+        width:25px;
+    }
 }
