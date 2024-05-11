@@ -172,24 +172,13 @@
         font-size: 1.5rem;
     }
     .sidebar {
-        grid-column: 1;
-        grid-row: 1 / 5;
-        justify-self: center; 
-        background-color: white;
         border-radius: 40px;
         width: 16.5px;
     }
     
     .circle-1, .circle-2, .circle-3, .circle-4 {
-        justify-self: center; 
-        align-self: center;
         width: 50px;
         height: 50px;
-        border-radius: 50%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
     } 
     .prozess-section h1 {
         font-size: 1.5rem;

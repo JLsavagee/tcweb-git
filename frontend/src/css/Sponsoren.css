@@ -2,37 +2,30 @@
     font-size: 2rem;
 }
 
-.sponsoren-pitch h2 {
-    color: white;
-}
-
 .sponsoren-pitch p {
  font-size: 1.5rem;
 } 
 
 .sponsoren-pitch {
-    margin: 100px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 50px;
+    gap: 3rem;
 }
 
 .sbox-1, .sbox-2, .sbox-3, .sbox-4 {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 20px;
+    padding: 2%;
 }
 
 .sponsoren-headline {
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1000px;
 }
 
 .sponsoren-sidebar {
@@ -80,7 +73,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 20px;
+    padding: 2%;
 }
 
 .sbox-1 {
@@ -101,4 +94,40 @@
 .sbox-4 {
     grid-column: 2;
     grid-row: 5;
+}
+
+.s-icon {
+    color: #FF5C00;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .sponsoren-headline h1{
+        font-size: 1.5rem;
+    }
+
+    .sponsoren-pitch h1 {
+        font-size: 1.125rem;
+    }
+    
+    .sponsoren-pitch p {
+     font-size: 1rem;
+    } 
+
+    .sponsoren-sidebar {
+        border-radius: 40px;
+        width: 16.5px;
+    }
+    
+    .scircle-1, .scircle-2, .scircle-3, .scircle-4 {
+        width: 50px;
+        height: 50px;
+    } 
+
+    .s-icon {
+        height: 25px;
+        width:25px;
+    }
 }
