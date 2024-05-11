@@ -14,11 +14,10 @@
 }
 
 .impressum-titel {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Zentriert die Inhalte vertikal */
-    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
+    padding: 20px; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
     max-width: 1200px; /* Maximalbreite des Containers */
     margin: 0 auto; /* Zentriert den Container */
 }
@@ -29,7 +28,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
-    max-width: 700px; /* Maximalbreite des Containers */
+    padding: 2%; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
+    max-width: 75%; /* Maximalbreite des Containers */
     margin: 0 auto; /* Zentriert den Container */
+}
+
+.impressum-text p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .impressum-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .impressum-text p {
+        font-size: 1rem;
+    }
 }
