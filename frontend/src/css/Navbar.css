@@ -74,13 +74,12 @@ nav .nav-link {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    transition: 1s;
     transform: translateX(100vh);
   }
 
   .responsive_nav {
     transform: none;
-
+    transition: 1s;
   }
 }
 
