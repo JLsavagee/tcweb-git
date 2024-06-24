@@ -11,7 +11,7 @@ function Navbar()  {
       navRef.current.classList.toggle("responsive_nav")
     }
   return (
-  <div className='container'>
+  <div className='container_1'>
     <span className="navbar-brand">Team-cards.de</span>
       <nav ref={navRef} className="navbar">
           <NavLink to="/" className="nav-link">

@@ -80,8 +80,20 @@ button:hover {
   padding-right: 0.5rem;
 }
 
+.container_1{
+  max-width: 1536px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 @media (max-width: 640px) {
   .container {
+    max-width: 475px;
+  }
+  .container_1 {
     max-width: 475px;
   }
 }

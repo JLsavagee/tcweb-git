@@ -23,7 +23,7 @@ function Homepage() {
   return (
     <div>
       <Navbar />
-      <div className='container'>
+      <div className='container_1'>
         <div className="hp-section1">
           <div className="hp-section1-text">
               <h1>Dein Fußball Erlebnis wird</h1>
