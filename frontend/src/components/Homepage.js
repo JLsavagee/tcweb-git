@@ -2,9 +2,11 @@ import React from 'react';
 import '../css/Homepage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './Navbar.js';
-import Image1 from '../assets/images/JUSTIN_YAKANI.png'
-import Image2 from '../assets/images/PHILLIP_SCHULZE.png'
+import Image1 from '../assets/images/JUSTIN_YAKANI.jpg'
+import Image2 from '../assets/images/PHILLIP_SCHULZE.jpg'
+import Image3 from '../assets/images/CHARLIE_WIESTMANN.jpg'
 import Image4 from '../assets/images/Teamcards.de Jojo 1.jpg';
+import Image5 from '../assets/images/YAMAL_ARANGO.jpg';
 
 import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -42,9 +44,9 @@ function Homepage() {
         <div className='hp-section2'>
          <div className='hp-example-pictures'>
             <img src={Image1} alt="Bild"  /> 
-            <img src={Image4} alt="Bild"  /> 
+            <img src={Image3} alt="Bild"  /> 
             <img src={Image2} alt="Bild"  /> 
-            <img src={Image4} alt="Bild"  /> 
+            <img src={Image5} alt="Bild"  /> 
           </div>
         </div>
         <div className='hp-contact'>
