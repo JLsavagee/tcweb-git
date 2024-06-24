@@ -3,9 +3,9 @@
     margin-bottom: 100px;
 }
 
-.impressum-content {
+.impressum-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; /* Zentriert die Inhalte vertikal */
     justify-content: flex-start; /* Setzt Abstand zwischen Bild und Text */
     padding: 1vh 5vw; /* Vertikaler Abstand basierend auf der Höhe und horizontaler Abstand basierend auf der Breite des Viewports */
