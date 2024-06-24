@@ -12,11 +12,8 @@
 }
 
 /* Styles für den Website-Namen */
-.navbar-brand {
-  font-size: 2.5rem; /* Größere Schrift für den Markennamen */
-  color: var(--text-color); /* Verwenden der Hauptfarbe für den Markennamen */
-  text-decoration: none; /* Keine Unterstreichung für Text-Links */
-  cursor: default; /* Der Markenname ist nicht klickbar */
+.navbar-brand img{
+  max-height: 75px;
 }
 
 nav .nav-link {

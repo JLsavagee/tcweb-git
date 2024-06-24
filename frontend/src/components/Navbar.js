@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {useRef} from "react";
 import {FaBars} from "react-icons/fa";
+import LogoImg from "../assets/images/TC_Logo.png"
 import '../css/Navbar.css'; // Pfad zu deiner CSS-Datei anpassen, falls nötig
 
 function Navbar()  {
@@ -11,8 +12,10 @@ function Navbar()  {
       navRef.current.classList.toggle("responsive_nav")
     }
   return (
-  <div className='container_1'>
-    <span className="navbar-brand">Team-cards.de</span>
+    <div className='container_1'>
+      <div className="navbar-brand">
+       <img src={LogoImg} alt="Team-Cards.de" />
+      </div>
       <nav ref={navRef} className="navbar">
           <NavLink to="/" className="nav-link">
             Home

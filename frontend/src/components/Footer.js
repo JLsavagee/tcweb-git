@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import LogoImg from "../assets/images/TC_Logo.png"
 import '../css/Footer.css';
 
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
     <div className='container'>
       <footer className="footer">
         <div className="navbar-brand">
-          Team-cards.de
+          <img src={LogoImg} alt="Team-Cards.de" />
         </div>
         <div className="nav-links">
           <NavLink to="/" exact className="nav-link">
