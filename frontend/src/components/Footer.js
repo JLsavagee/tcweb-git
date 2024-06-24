@@ -16,9 +16,9 @@ const Footer = () => {
           {/* <NavLink to="/spieler-quiz" className="nav-link">
             Spieler-Quiz
           </NavLink> */}
-          <NavLink to="/foto-upload" className="nav-link">
+          {/*<NavLink to="/foto-upload" className="nav-link">
             Foto Upload
-          </NavLink>
+        </NavLink>*/}
           <NavLink to="/organisatoren" className="nav-link">
             Für Organisatoren
           </NavLink>

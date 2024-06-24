@@ -26,9 +26,9 @@ function Navbar()  {
           <NavLink to="/sponsoren" className="nav-link">
             Für Sponsoren
           </NavLink>
-          <NavLink to="/foto-upload" className="nav-link">
+          {/*<NavLink to="/foto-upload" className="nav-link">
             Foto Upload
-          </NavLink>
+        </NavLink>*/}
           <NavLink to="/über-uns" className="nav-link">
             Über Uns
           </NavLink>
