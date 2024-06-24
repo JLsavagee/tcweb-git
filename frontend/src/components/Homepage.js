@@ -40,12 +40,18 @@ function Homepage() {
       </div>
       <div className='container'>
         <div className='hp-section2'>
-        <div className='hp-example-pictures'>
+         <div className='hp-example-pictures'>
             <img src={Image1} alt="Bild"  /> 
             <img src={Image4} alt="Bild"  /> 
             <img src={Image2} alt="Bild"  /> 
             <img src={Image4} alt="Bild"  /> 
+          </div>
         </div>
+        <div className='hp-contact'>
+          <h1>Ein Karten Paket für Dich!</h1>
+          <p> Hast Du Teamcards in Action gesehen und bist an einem Karten Paket für Deinen Event interessiert?</p>
+          <p>Schreibe uns einfach eine E-Mail mit Deiner Anfrage und wir melden uns bei Dir mit einem unverbindlichen Angebot!</p>
+          <p> E-Mail: julius@maiwaldt.de</p>
         </div>
       </div>
       <div className='container'>
