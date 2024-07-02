@@ -13,13 +13,13 @@ function Datenschutzerklärung() {
                     <div className="datenschutz-text">
                         <h3>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO)</h3>
                         <p>
-                            JCM Beratung 6 Beteilgungen GmbH
+                            JCM Beratung & Beteilgungen GmbH
                         <br/>
                             Diekkamp 33a, 22359 Hamburg
                         <br/>
                             Telefon: +49 170 2221280
                         <br/>
-                            E-Mail: janluca@maiwaldt.de
+                            E-Mail: maiwaldt@team-cards.de
                         </p>
                         <h3>1. Erfassung und Verarbeitung von personenbezogenen Daten</h3>
                         <p>

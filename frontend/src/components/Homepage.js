@@ -53,7 +53,7 @@ function Homepage() {
           <h1>Ein Karten Paket für Dich!</h1>
           <p> Hast Du Teamcards in Action gesehen und bist an einem Karten Paket für Deinen Event interessiert?</p>
           <p>Schreibe uns einfach eine E-Mail mit Deiner Anfrage und wir melden uns bei Dir mit einem unverbindlichen Angebot!</p>
-          <p> E-Mail: julius@maiwaldt.de</p>
+          <p> E-Mail: info@team-cards.de</p>
         </div>
       </div>
       <div className='container'>

@@ -25,7 +25,7 @@ const Impressum = () => {
                                     Vertreten durch:<br />
                                     Julius Maiwaldt<br />
                                     Telefon: +49 157 58162050<br />
-                                    E-Mail: julius@maiwaldt.de<br />
+                                    E-Mail: maiwaldt@team-cards.de<br />
                                 </p>
                                 <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
                                 <p>
