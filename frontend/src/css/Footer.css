@@ -1,49 +1,45 @@
 /* Footer Styles */
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Define three columns */
-  align-items: start;
-  gap: 10rem;
-  padding: 1rem;
+  display: flex;
   background: linear-gradient(0deg, rgba(0, 168, 107, 0.50) 10.99%, rgba(4, 57, 39, 0) 92.45%);
   color: var(--text-color);
   font-family: 'FiraSans', sans-serif;
-  box-sizing: border-box;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  padding: 2%;
 }
 
-/* Brand name styles */
-.navbar-brand {
-  grid-column: 1;
-}
-
-/* First group of nav links styles */
 .nav-links {
-  display: flex;
-  flex-direction: column;
-  grid-column: 2;
-}
-
-/* Second group of nav links styles */
-.nav-links-2 {
-  display: flex;
-  flex-direction: column;
-  grid-column: 3;
-}
-
-/* Navigation link styles */
-.nav-link, .nav-link-2 {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Two columns */
+  gap: 10px; /* Adjust gap as needed */
   color: var(--text-color);
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
   text-decoration: none;
-  font-size: 1rem;
-  margin-bottom: 0.5rem; /* Space between links */
+  color: var(--text-color);
 }
 
 /* Active link styles */
-.nav-link.active, .nav-link-2.active {
+.nav-link.active {
   font-weight: bold;
-  color: var(--text-color); /* Corrected variable */
 }
 
-.nav-link:hover, .nav-link-2:hover {
+/* Hover effect on navigation links */
+.nav-link:hover {
   background-color: var(--button-hover-color);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -1,42 +1,83 @@
 /* Grundlegende Navbar-Styles */
+
 .navbar {
+  max-width: 100%;
   background-color: rgba(255, 255, 255, 0); /* Transparent white */
-  color: var(--text-color);
   font-family: 'FiraSans', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
-  margin-top: 2rem;
+  padding: 2%;
+  margin-top: 2%;
 }
 
 /* Styles für den Website-Namen */
-.navbar-brand {
-  font-size: 1.5rem; /* Größere Schrift für den Markennamen */
-  color: var(--text-color); /* Verwenden der Hauptfarbe für den Markennamen */
-  text-decoration: none; /* Keine Unterstreichung für Text-Links */
-  cursor: default; /* Der Markenname ist nicht klickbar */
+.navbar-brand img{
+  max-height: 75px;
 }
 
-/* Styles für Navigationselemente */
-.nav-link {
-  color: var(--text-color); /* Dunkelgraue Farbe für die Navigationstexte */
-  text-decoration: none; /* Keine Unterstreichung */
-  font-size: 1rem; /* Standard Schriftgröße für die Navigation */
+nav .nav-link {
   display: flex;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 /* Aktiver Link */
 .nav-link.active {
   font-weight: bold; /* Aktiver Link ist fett */
-  color: var(---text-color); /* Farbwechsel für den aktiven Link */
 }
 
 .nav-link:hover {
   background-color: var(--button-hover-color); /* Farbwechsel beim Hover */
+  border-radius: 5px;
 }
 
+.nav-btn {
+  visibility: hidden;
+  opacity: 0;
+  background-color: transparent;
+} 
 
+.nav-btn:hover {
+  background-color: transparent;
+}
+ 
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 96px;
+    right: 2%;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    background-color:  rgba(4, 79, 51, 0.9);
+    border-top-left-radius: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(50% - 4%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    transform: translateX(100vh);
+  }
+
+  .responsive_nav {
+    transform: none;
+    transition: 1s;
+  }
+}
 
   

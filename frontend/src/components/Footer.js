@@ -1,41 +1,43 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import LogoImg from "../assets/images/TC_Logo.png"
 import '../css/Footer.css';
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <footer className="footer">
-      {/* Brand name */}
-      <div className="navbar-brand">
-        TeamCards
-      </div>
-
-      {/* First group of nav links */}
-      <div className="nav-links">
-        <NavLink to="/" exact className="nav-link">
-          Home
-        </NavLink>
-        <NavLink to="/spieler-quiz" className="nav-link">
-          Spieler-Quiz
-        </NavLink>
-        <NavLink to="/foto-upload" className="nav-link">
-          Foto Upload
-        </NavLink>
-        <NavLink to="/über-uns" className="nav-link">
-          Über Uns
-        </NavLink>
-      </div>
-
-      {/* Second group of nav links */}
-      <div className="nav-links-2">
-        <NavLink to="/impressum" className="nav-link-2">
-          Impressum
-        </NavLink>
-        <NavLink to="/datenschutzerklärung" className="nav-link-2">
-          Datenschutzerklärung
-        </NavLink>
-      </div>
-    </footer>
+    <div className='container'>
+      <footer className="footer">
+        <div className="navbar-brand">
+          <img src={LogoImg} alt="Team-Cards.de" />
+        </div>
+        <div className="nav-links">
+          <NavLink to="/" exact className="nav-link">
+            Home
+          </NavLink>
+          {/* <NavLink to="/spieler-quiz" className="nav-link">
+            Spieler-Quiz
+          </NavLink> */}
+          {/*<NavLink to="/foto-upload" className="nav-link">
+            Foto Upload
+        </NavLink>*/}
+          <NavLink to="/organisatoren" className="nav-link">
+            Für Organisatoren
+          </NavLink>
+          <NavLink to="/sponsoren" className="nav-link">
+            Für Sponsoren
+          </NavLink>
+          <NavLink to="/über-uns" className="nav-link">
+            Über Uns
+          </NavLink>
+          <NavLink to="/impressum" className="nav-link">
+            Impressum
+          </NavLink>
+          <NavLink to="/datenschutzerklärung" className="nav-link">
+            Datenschutzerklärung
+          </NavLink>
+        </div>
+      </footer>
+    </div>
   );
 };
-export default Navbar;
+export default Footer;

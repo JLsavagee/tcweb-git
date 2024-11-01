@@ -4,17 +4,21 @@
   "description": "Teamcards Website",
   "main": "app.js",
   "scripts": {
-    "start":  "cd frontend && npm run build"
+    "start": "cd frontend && npm run build"
   },
   "author": "DonJL",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.6.5",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "multer": "*",
     "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.0",
     "react-scripts": "^5.0.1",
     "scripts": "^0.1.0"

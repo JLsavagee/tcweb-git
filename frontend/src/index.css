@@ -7,6 +7,9 @@
   --background-color: #043927; /* helles Grau für Hintergründe */
   --text-color: #ffffff; /* dunkles Grau für Text */
   --button-hover-color: #ffffff6c; /* dunkleres Grün für Button-Hover */
+  --label-color: #E95918;
+  font-size: 12px;
+
 }
 
 /* Font face definition */
@@ -23,9 +26,7 @@ body {
   padding: 0;
   font-family: 'FiraSans', sans-serif;
   color: var(--text-color);
-  background-image: url('./assets/images/Background_image2.png'); /* Adjust the path as necessary */
-  background-size: 100% auto;
-  background-position: top center;
+  background-color: #006b44;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,19 +34,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #FF5C00;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
 p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-/* Links and buttons */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
+label {
+color: var(--label-color)
 }
 
 button {
@@ -62,14 +71,29 @@ button:hover {
   background-color: var(--button-hover-color);
 }
 
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .navbar {
-    /* Adjustments for mobile devices */
-  }
-  .container {
-    padding: 0 10px;
-  }
+.container {
+  max-width: 1536px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
+.container_1{
+  max-width: 1536px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  .container_1 {
+    max-width: 475px;
+  }
+}
