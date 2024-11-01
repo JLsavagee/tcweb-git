@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css'
 import '../css/Homepage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './Navbar.js';
@@ -32,7 +33,7 @@ function Homepage() {
         <div className="hp-section1">
           <div className="hp-section1-text">
               <h1>Dein Fußball Erlebnis wird</h1>
-              <h2>ERINNERUNG!</h2>
+              <h1 className='h1-blue'>ERINNERUNG!</h1>
               <h3>Individuelle Sammelkarten für deine Events</h3>
           </div>
           <div className='hp-section1-image'>
