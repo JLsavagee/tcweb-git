@@ -3,7 +3,7 @@
 .navbar {
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0); /* Transparent white */
-  font-family: 'FiraSans', sans-serif;
+  font-family: 'SairaCondensed';
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ nav .nav-link {
   display: flex;
   font-size: 1.5rem;
   text-decoration: none;
-  color: var(--text-color);
+  color: #ffffff;
 }
 
 /* Aktiver Link */

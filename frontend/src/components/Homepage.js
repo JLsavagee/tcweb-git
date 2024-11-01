@@ -1,5 +1,4 @@
 import React from 'react';
-import '../index.css'
 import '../css/Homepage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './Navbar.js';
@@ -29,7 +28,7 @@ function Homepage() {
   return (
     <div>
       <Navbar />
-      <div className='container_1'>
+      <div className='container'>
         <div className="hp-section1">
           <div className="hp-section1-text">
               <h1>Dein Fußball Erlebnis wird</h1>

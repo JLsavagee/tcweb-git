@@ -12,7 +12,7 @@ function Navbar()  {
       navRef.current.classList.toggle("responsive_nav")
     }
   return (
-    <div className='container_1'>
+    <div className='container'>
       <div className="navbar-brand">
        <img src={LogoImg} alt="Team-Cards.de" />
       </div>

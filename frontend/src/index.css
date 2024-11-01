@@ -1,21 +1,16 @@
 
 /* Global style definitions */
 :root {
-  /* Color scheme */
-  --primary-color: #1e824c; /* Hauptgrün */
-  --secondary-color: #3BB143; /* Weiß */
-  --background-color: #043927; /* helles Grau für Hintergründe */
-  --text-color: #ffffff; /* dunkles Grau für Text */
-  --button-hover-color: #ffffff6c; /* dunkleres Grün für Button-Hover */
-  --label-color: #E95918;
-  font-size: 12px;
-
+  /* Color scheme for elements that are not texts */
+  --background-color: #EAEAEA;
+  --button-hover-color: #ea00006c;
+  --primary-blue: #008CF0;
 }
 
 /* Font face definition */
 @font-face {
-  font-family: 'FiraSans';
-  src: url('./assets/fonts/Fira_Sans/FiraSans-Regular.ttf')Dies  format('truetype');
+  font-family: 'SairaCondensed';
+  src: url('./assets/fonts/Saira_Condensed/SairaCondensed-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,34 +19,41 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'FiraSans', sans-serif;
-  color: var(--text-color);
-  background-color: #006b44;
+  background-color: var(--background-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'FiraSans', sans-serif;
+  font-family: 'SairaCondensed';
 }
 
 h1 {
   font-size: 40px;
   line-height: auto;
+  font-weight: bold;
   color: #ffffff;
 }
 
-.h1-blue {
+.h1-blue {
   color: #008CF0;
 }
 
 h2 {
-  font-size: 3rem;
-  line-height: 1.5;
-  color: #FF5C00;
+  font-size: 32px;
+  line-height: auto;
+  color:#1B1B1B;
 }
 
 h3 {
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: 27px;
+  line-height: auto;
+  font-weight: bold;
+  color: #1B1B1B;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: auto;
+  color: #757575;
 }
 
 p {
@@ -60,13 +62,9 @@ p {
   color: #1B1B1B;
 }
 
-label {
-color: var(--label-color)
-}
-
 button {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--primary-blue);
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -87,20 +85,8 @@ button:hover {
   padding-right: 0.5rem;
 }
 
-.container_1{
-  max-width: 1536px;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 @media (max-width: 640px) {
   .container {
-    max-width: 475px;
-  }
-  .container_1 {
     max-width: 475px;
   }
 }

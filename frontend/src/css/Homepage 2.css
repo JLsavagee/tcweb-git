@@ -92,6 +92,17 @@
     max-width: 100%;
   }
 
+  .hp-section3 button {
+    font-size: 1.25rem;
+    background-color: #FF5C00;
+  }
+
+  .hp-section3 h1 {
+    font-size: 2rem;
+    color: white;
+    line-height: 1.5;
+  }
+
   .hp-section3 h2 {
     font-size: 3rem;
     color: white;
